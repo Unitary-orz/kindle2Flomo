@@ -37,13 +37,6 @@
               <div class="mb-6">3. 已导入的笔记右下角显示 flomo 图标，且不可再编辑</div>
               <div class="mb-6">4. 点击右下角图标可还原内容，重置笔记状态</div>
               <div class="mb-6">5. 已导入或编辑过的笔记将不再参与格式调整，如需调整请先重置笔记状态</div>
-              <div class="mb-10">还有其他问题？扫码进群反馈</div>
-              <img
-                class="block block-center"
-                width="200"
-                height="200"
-                src="~@/assets/img/qrcode.png"
-              />
             </div>
           </template>
           <div class="help k-icon" :title="t('help')" @click=""></div>
@@ -61,39 +54,6 @@
           <el-dropdown-menu>
             <template v-if="isElectron">
               <el-dropdown-item command="update">{{t('check-update')}}</el-dropdown-item>
-              <el-dropdown-item command="blog" divided>
-                {{t('blog')}}
-              </el-dropdown-item>
-              <el-dropdown-item command="photo">
-                Tit1e's Photo Studio
-              </el-dropdown-item>
-              <el-dropdown-item command="jike">
-                {{t('jike')}}
-              </el-dropdown-item>
-              <el-dropdown-item command="thank" divided>{{t('thanks')}}</el-dropdown-item>
-            </template>
-            <template v-else>
-              <el-dropdown-item
-                ><a href="https://evolly.one" target="_blank"
-                  >{{t('blog')}}</a
-                ></el-dropdown-item
-              >
-              <el-dropdown-item>
-                <a href="https://album.animalcrossing.life" target="_blank"
-                  >Tit1e's Photo Studio</a
-                >
-              </el-dropdown-item>
-              <el-dropdown-item>
-                <a
-                  href="https://web.okjike.com/u/FFDB1E46-63DC-43BE-AA1A-36F3D9CD0017"
-                  target="_blank"
-                >
-                  {{t('jike')}}
-                </a>
-              </el-dropdown-item>
-              <el-dropdown-item divided>
-                <a href="https://mp.weixin.qq.com/s/o793lUsBaWc61fLZzFDlxg" target="_blank" rel="noopener noreferrer">{{t('thanks')}}</a>
-              </el-dropdown-item>
             </template>
           </el-dropdown-menu>
         </template>
@@ -190,20 +150,9 @@ const total = computed(() =>store.getters.textList.length)
 const importCount = computed(() =>store.getters.importCount)
 const contentList = computed(() => store.getters.textList)
 
-const urlMap = {
-  blog: 'https://evolly.one/',
-  photo: 'https://album.animalcrossing.life/',
-  jike: 'https://web.okjike.com/u/FFDB1E46-63DC-43BE-AA1A-36F3D9CD0017',
-  thank: 'https://mp.weixin.qq.com/s/o793lUsBaWc61fLZzFDlxg'
-}
-
 function handleCommand(type: string){
-  if(isElectron){
-    if(type === 'update') {
-      ipcRenderer.send('update')
-    } else {
-      openUrl(urlMap[type])
-    }
+  if(isElectron && type === 'update') {
+    ipcRenderer.send('update')
   }
 }
 

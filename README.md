@@ -1,14 +1,26 @@
 # Send2flomo
-
-![kindle2flomo downloads](https://img.shields.io/github/downloads/Tit1e/kindle2Flomo/total)
-&nbsp;&nbsp;&nbsp;&nbsp;
-![](https://img.shields.io/badge/license-GPL-green.svg)
-&nbsp;&nbsp;&nbsp;&nbsp;
-[![](https://img.shields.io/badge/即刻-@直走的螃蟹-FFE440.svg)](https://web.okjike.com/u/FFDB1E46-63DC-43BE-AA1A-36F3D9CD0017)
+> based [Tit1e/SendToflomo](https://github.com/Tit1e/SendToflomo)
 
 ### 将 Kindle、Apple Books、KOReader、微信阅读笔记一键导入至 flomo
 
 [中文](./README.md) | [English](./README_en_US.md)
+
+## 功能特点
+
+- **多平台支持**：兼容 Kindle、Apple Books、KOReader、微信读书等多个阅读平台的笔记格式
+- **批量导入**：一次性将大量笔记快速导入到 flomo
+- **自定义标签**：支持为导入的笔记添加自定义标签，方便分类管理
+- **内容编辑**：在导入前可对笔记内容进行编辑调整
+- **本地存储**：所有数据本地保存，保障隐私安全
+- **多种导出**：支持导出为 Markdown、CSV 等多种格式
+
+## 使用方法
+
+1. 下载并安装 Send2flomo
+2. 从您的阅读设备或应用导出笔记（HTML、TXT 或 JSON 格式）
+3. 在 Send2flomo 中上传笔记文件
+4. 设置 flomo API 并选择要导入的笔记
+5. 点击导入按钮，完成笔记迁移
 
 ## 预览
 ![](./screenshot/home.png)
@@ -18,18 +30,9 @@
 ![](./screenshot/edit.png)
 
 ![](./screenshot/reset.png)
+
 ## 注册
-### [flomo](https://flomoapp.com/register2/?MTAzNDE)
-
-## 网页版（仅支持 html 与 txt 格式导入）
-### [Send2flomo](https://tit1e.github.io/kindle2Flomo/)
-
-## Mac 应用下载
-### [网盘下载](https://wwr.lanzoui.com/b02c3nkyf) 访问密码：47if
-### [Github Releases](https://github.com/Tit1e/kindle2Flomo/releases)
-
-## 问题反馈
-![](./screenshot/qrcode.png)
+### [flomo](https://flomoapp.com/register2/)
 
 
 ## 开发注意事项
