@@ -69,11 +69,11 @@ module.exports = {
           // 允许修改安装目录，建议为 true，是否允许用户改变安装目录，默认是不允许
           allowToChangeInstallationDirectory: true,
           // 安装图标
-          installerIcon: 'resources/ico/icon.ico',
+          installerIcon: 'public/icons/AppIcon.ico',
           // 卸载图标
-          uninstallerIcon: 'resources/ico/icon.ico',
+          uninstallerIcon: 'public/icons/AppIcon.ico',
           // 安装时头部图标
-          installerHeaderIcon: 'resources/ico/icon.ico',
+          installerHeaderIcon: 'public/icons/AppIcon.ico',
           // 创建桌面图标
           createDesktopShortcut: true,
           // 创建开始菜单图标

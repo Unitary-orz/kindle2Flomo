@@ -27,14 +27,13 @@
 ## Preview
 ![](./screenshot/home.png)
 
-![](./screenshot/help.png)
-
 ![](./screenshot/edit.png)
 
-![](./screenshot/reset.png)
+![](./screenshot/location.jpg)
 
 ## Register
 ### [flomo](https://flomoapp.com/register2/)
 
 ## Download
-### [Github Releases](https://github.com/Tit1e/kindle2Flomo/releases)
+
+### [Github Releases](https://github.com/Unitary-orz/kindle2Flomo/releases)

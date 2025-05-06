@@ -25,15 +25,45 @@
 ## 预览
 ![](./screenshot/home.png)
 
-![](./screenshot/help.png)
-
 ![](./screenshot/edit.png)
 
-![](./screenshot/reset.png)
+![](./screenshot/location.jpg)
 
 ## 注册
+
 ### [flomo](https://flomoapp.com/register2/)
 
+## 下载
+
+### [Github Releases](https://github.com/Unitary-orz/kindle2Flomo/releases)
+
+## 打包步骤
+
+### 环境准备
+1. 确保已安装 Node.js 和 yarn/npm
+2. 克隆仓库并进入项目目录
+   ```bash
+   cd kindle2Flomo
+   ```
+3. 安装依赖
+   ```bash
+   yarn install
+   ```
+
+### 打包应用
+#### Mac系统
+```bash
+yarn electron:build
+```
+打包完成后，可在 `dist_electron` 目录下找到以下文件：
+- `Send2flomo-x.x.x.dmg`：安装包，双击打开后拖动到应用程序文件夹即可
+- `Send2flomo-x.x.x-mac.zip`：压缩包，解压后可直接运行
+
+#### Windows系统
+```bash
+yarn electron:build
+```
+打包完成后，可在 `dist_electron` 目录下找到安装包 `Send2flomo Setup x.x.x.exe`
 
 ## 开发注意事项
 **bplistParser** 这个依赖需手动修改 `maxObjectSize` 与 `maxObjectCount` 这两个常量的数值，修改得大一些，否则当 `Books.plist` 中图书数量过多时会出现无法解析的问题。

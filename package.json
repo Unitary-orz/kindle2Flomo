@@ -1,6 +1,6 @@
 {
   "name": "send2flomo",
-  "version": "2.5.5",
+  "version": "2.5.5-pure-loc",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
